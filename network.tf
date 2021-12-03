@@ -1,6 +1,10 @@
-resource "azurerm_resource_group" "example" {
-  name     = "dkelly-resources"
-  location = "East US"
+resource "azurerm_resource_group" "myresourcegroup" {
+  name     = "${var.prefix}-workshop"
+  location = var.location
+
+  tags = {
+    environment = "Production"
+  }
 }
 
 module "network" {
