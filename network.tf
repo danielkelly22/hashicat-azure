@@ -1,5 +1,5 @@
-resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "${var.prefix}-workshop"
+resource "azurerm_resource_group" "gauravresourcegroup" {
+  name     = "${var.prefix}---guarav--workshop"
   location = var.location
 
   tags = {
